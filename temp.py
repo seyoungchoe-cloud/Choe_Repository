@@ -303,7 +303,7 @@ def get_experiments():
         "SELECT date_temp, titration_id_temp, standard_solution_name_temp, "
         "titrant_solution_name_temp, totaltrial_1_cm3_temp, totaltrial_2_cm3_temp, "
         "totaltrial_3_cm3_temp, totaltrial_average_cm3_temp, pH_temp, observation_temp "
-        "FROM Titrations_temp ORDER BY titration_id_temp"
+        "FROM Titrations_temp ORDER BY titration_id_TEMP"
     )
     rows = cur.fetchall()
     cur.close()
